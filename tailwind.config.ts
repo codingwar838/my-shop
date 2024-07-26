@@ -29,6 +29,7 @@ const config: Config = {
         "accent-300": "#fdba74",
         "accent-200": "#fed7aa",
         "accent-100": "#ffedd5",
+        "hero-pink": "#867EBC",
       },
     },
     screens: {
