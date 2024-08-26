@@ -1,13 +1,25 @@
-import React from "react";
-interface BtnProp {
-  content: string;
+import React, { ReactNode } from "react";
+interface ButtonProp {
+  type: string;
+  size: string;
+  handleClick?: () => void;
+  children: ReactNode;
 }
 
-const Button = ({ content }: BtnProp) => {
+const Button = ({ type, size, handleClick, children }: ButtonProp) => {
   return (
-    <div className="w-[70px] bg-green-900 text-white">
-      <button>{content}</button>
-    </div>
+    <button
+      className={` text-white rounded-lg cursor-pointer transition-all duration-300
+         ${size === "big" ? "px-8 py-2" : "px-4 py-2"}
+         ${type === "primary" ? "bg-primary-500 hover:bg-primary-500/80" : ""}
+         ${type === "accent" ? "bg-accent-500 hover:bg-accent-500/80" : ""}
+         ${type === "neutral" ? "bg-black hover:bg-black/80" : ""}
+        onch 
+         `}
+      onClick={handleClick}
+    >
+      {children}
+    </button>
   );
 };
 
