@@ -53,7 +53,7 @@ const Phones = () => {
     <section className="py-5">
       <Container>
         <h2 className="text-3xl mb-2 capitalize">Phones</h2>
-        <div className=" flex justify-between items-center">
+        <div className="flex justify-between gap-5">
           {phones.map((item) => (
             <Product key={item.id} item={item} />
           ))}

@@ -12,7 +12,8 @@
 .swiper-button-prev,
 .swiper-button-next,
 .swiper-pagination,
-.swiper-pagination-cat {
+.swiper-pagination-cat,
+.swiper-pagination-latestProduct {
   top: unset !important;
   left: unset !important;
   bottom: unset !important;
